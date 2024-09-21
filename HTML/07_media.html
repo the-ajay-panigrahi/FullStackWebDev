@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Media</title>
+  </head>
+  <body>
+    <figure>
+      <img src="./assets/ajay.jpg" alt="ajay" width="123px" />
+      <figcaption>Ajay</figcaption>
+    </figure>
+
+    <video
+      src="./assets/sample-vid.mp4"
+      width="400px"
+      controls
+      autoplay
+      muted
+      loop
+      controlsList="nofullscreen"
+    ></video>
+
+    <video width="400px" controls autoplay muted loop controlsList="nodownload">
+      <source src="./assets/sample-vid.mp4" />
+    </video>
+
+    <audio src="./assets/sample-audio.mp3" controls autoplay muted loop></audio>
+
+    <audio controls autoplay muted loop>
+      <source src="./assets/sample-audio.mp3" />
+    </audio>
+  </body>
+</html>
