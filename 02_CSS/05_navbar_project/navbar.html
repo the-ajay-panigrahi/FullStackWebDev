@@ -85,6 +85,52 @@
         color: #ffffff;
         cursor: pointer;
       }
+
+      #nav2 {
+        background-color: #e1ff0077;
+        width: 250px;
+        margin: 0 auto;
+        padding: 25px;
+        transition: all 0.8s ease-in-out;
+      }
+      #nav2 a {
+        color: #ffffffe4;
+        font-weight: bolder;
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 0.8s ease-in-out;
+      }
+      #nav2 li {
+        margin-bottom: 10px;
+        padding: 3px;
+        list-style: none;
+        transition: all 0.8s ease-in-out;
+      }
+      #nav2 li:hover {
+        background-color: #e1ff00bd;
+        text-align: center;
+        cursor: pointer;
+      }
+      #nav2 li:hover a {
+        color: #000000;
+      }
+      #nav2 button {
+        width: 100%;
+        height: 35px;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+        font-weight: bolder;
+        transition: all 0.45s ease-in-out;
+        color: #ffffff;
+        background-color: #e1ff0085;
+      }
+      #nav2 button:hover {
+        transition: all 0.45s ease-in-out;
+        background-color: #e1ff00;
+        color: #000000;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -104,6 +150,19 @@
     </header>
 
     <h2>Navigation Bar - Variant 2</h2>
+    <header>
+      <nav id="nav2">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <button>Login</button>
+      </nav>
+    </header>
     <!-- <h2>Navigation Bar - Variant 3</h2> -->
   </body>
 </html>
