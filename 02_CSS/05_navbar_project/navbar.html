@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: #3c3c3c;
+        color: #ffffff;
+      }
+
+      h2 {
+        text-align: center;
+        font-style: italic;
+        font-size: 30px;
+        background-color: #000000;
+        padding: 10px;
+        width: 400px;
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      #nav1 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(255, 123, 0);
+        margin-bottom: 50px;
+      }
+      #nav1 ul {
+        display: flex;
+      }
+      #nav1 li {
+        list-style: none;
+        padding: 20px 30px;
+      }
+      #nav1 a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all 0.25s ease;
+        position: relative;
+      }
+
+      #nav1 a::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        transform: scaleX(0);
+        transition: all 0.25s ease;
+        bottom: -5px;
+        left: 0;
+      }
+
+      #nav1 a:hover::after {
+        transition: all 0.25s ease;
+        color: #000000;
+        transform: scaleX(1);
+      }
+
+      #nav1 button {
+        /* padding: 20px 30px; */
+        width: 100px;
+        height: 45px;
+        border: none;
+        border-radius: 7px;
+        font-size: 21px;
+        font-weight: bolder;
+        transition: all 0.45s ease-in-out;
+      }
+      #nav1 button:hover {
+        transition: all 0.45s ease-in-out;
+        background-color: #000000;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Navigation Bar - Variant 1</h2>
+    <header>
+      <nav id="nav1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <button>Login</button>
+      </nav>
+    </header>
+
+    <h2>Navigation Bar - Variant 2</h2>
+    <!-- <h2>Navigation Bar - Variant 3</h2> -->
+  </body>
+</html>
