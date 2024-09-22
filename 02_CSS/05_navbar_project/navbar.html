@@ -21,10 +21,10 @@
         font-style: italic;
         font-size: 30px;
         background-color: #000000;
-        padding: 10px;
+        padding: 7px;
         width: 400px;
         border-radius: 10px;
-        margin: 20px auto;
+        margin: 10px auto;
       }
 
       #nav1 {
@@ -33,7 +33,7 @@
         align-items: center;
         justify-content: space-around;
         background-color: rgb(255, 123, 0);
-        margin-bottom: 50px;
+        margin-bottom: 10px;
       }
       #nav1 ul {
         display: flex;
@@ -70,7 +70,6 @@
       }
 
       #nav1 button {
-        /* padding: 20px 30px; */
         width: 100px;
         height: 45px;
         border: none;
@@ -92,6 +91,7 @@
         margin: 0 auto;
         padding: 25px;
         transition: all 0.8s ease-in-out;
+        margin-bottom: 30px;
       }
       #nav2 a {
         color: #ffffffe4;
@@ -131,6 +131,78 @@
         color: #000000;
         cursor: pointer;
       }
+
+      #nav3 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #4682b4;
+        margin-bottom: 10px;
+        position: absolute;
+      }
+      #nav3 ul {
+        display: flex;
+      }
+      #nav3 li {
+        list-style: none;
+        padding: 20px 30px;
+      }
+      #nav3 a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 20px;
+        transition: all 0.25s ease;
+        position: relative;
+      }
+
+      #nav3 a:hover {
+        transition: all 0.25s ease;
+        color: #000000;
+      }
+
+      #nav3 button {
+        width: 100px;
+        height: 45px;
+        border: none;
+        border-radius: 7px;
+        font-size: 21px;
+        font-weight: bolder;
+        transition: all 0.45s ease-in-out;
+      }
+      #nav3 button:hover {
+        transition: all 0.45s ease-in-out;
+        background-color: #000000;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .dropdown {
+        display: flex;
+        flex-direction: column;
+      }
+      .dropdown-content {
+        position: absolute;
+        flex-direction: column;
+        background-color: #115a96;
+        display: none;
+        top: 50px;
+        padding: 20px 5px;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      #nav3 .dropdown:hover .dropdown-content a {
+        color: #ffffff;
+      }
+      #nav3 .dropdown:hover .dropdown-content p {
+        padding: 5px;
+        margin: 5px;
+        margin-top: -5px;
+      }
+      #nav3 .dropdown:hover .dropdown-content :hover {
+        background-color: #00315a;
+      }
     </style>
   </head>
   <body>
@@ -163,6 +235,26 @@
         <button>Login</button>
       </nav>
     </header>
-    <!-- <h2>Navigation Bar - Variant 3</h2> -->
+    <h2>Navigation Bar - Variant 3</h2>
+    <header>
+      <nav id="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="dropdown">
+            <a href="#">Blog</a>
+            <div class="dropdown-content">
+              <p><a href="#">HTML</a></p>
+              <p><a href="#">CSS</a></p>
+              <p><a href="#">JavaScript</a></p>
+            </div>
+          </li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <button>Login</button>
+      </nav>
+    </header>
   </body>
 </html>
