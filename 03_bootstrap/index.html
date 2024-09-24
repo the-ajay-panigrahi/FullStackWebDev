@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <style>
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
       .my-class-hover:hover {
         background-color: #ff7700 !important;
       }
@@ -38,6 +42,47 @@
 
       #img3 {
         object-position: center 7%;
+      }
+
+      .hoverrr:hover {
+        background-color: #000000 !important;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .hoverrr {
+        transition: all 0.5s ease-in-out;
+      }
+
+      .card {
+        margin: 10px auto;
+        min-height: 485px;
+      }
+
+      .card:hover {
+        cursor: pointer;
+      }
+
+      .card-title {
+        font-size: 25px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        /* text-align: center; */
+      }
+
+      .card-text {
+        font-size: 19px;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
+        align-items: start;
+        max-width: 1200px;
+        margin: 30px auto;
+        row-gap: 20px;
+        column-gap: 20px;
       }
     </style>
   </head>
@@ -141,6 +186,212 @@
         </button>
       </div>
     </section>
+
+    <main>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img1.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">
+            Welcome to our ultimate HTML tutorial series.This playlist is
+            designed to bring absolute beginners into the world of coding and
+            transform them into proficient HTML developers.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img2.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Javascript</h5>
+          <p class="card-text">
+            Chai aur Javascript is a standout online series that masterfully
+            breaks down the fundamentals of JavaScript programming for
+            beginners, all in accessible Hindi language.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img3.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">React</h5>
+          <p class="card-text">
+            Learn reactjs with chai and me. This is one of beginner friendly
+            reactjs series that will teach you foundation of reactjs by building
+            projects in react.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img4.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Backend</h5>
+          <p class="card-text">
+            Welcome to another playlist about building a complete and complex
+            backend using javascript as your programming language. In this
+            series, we will start from scratch.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img5.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Python</h5>
+          <p class="card-text">
+            A python series for beginners. If you are interested to learn python
+            to get ready for industry and know behind the scene working of
+            python, you are at right place.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img6.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">NextJS</h5>
+          <p class="card-text">
+            A complete production level NEXTJS series that makes you freelance
+            ready to take down any project.
+            <br />
+            You will be building a fully functional NextJS project. This series
+            is beginner friendly.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoBAaWGtn9GA2PTw0HO0tXzq&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img7.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Django</h5>
+          <p class="card-text">
+            Welcome to the playlist of chai aur Django.
+            <br />
+            You will be building a fully functional Django project with easy
+            steps. Follow this playlist to master Django.
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img src="./assets/card-img8.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">C++</h5>
+          <p class="card-text">
+            A playlist that will teach you C++ in a very friendly way. By the
+            end of this playlist, you will understand the C++ and will be able
+            to build your own logics with C++ programming language
+          </p>
+          <a
+            target="_blank"
+            href="https://youtube.com/playlist?list=PLu71SKxNbfoCPfgKZS8UE0MDuwiKvL8zi&feature=shared"
+            class="btn btn-primary hoverrr"
+            style="
+              width: 100%;
+              background-color: #ff7700;
+              border: none;
+              font-weight: bold;
+              letter-spacing: 1.3px;
+              word-spacing: 2px;
+            "
+            >Go To Course</a
+          >
+        </div>
+      </div>
+    </main>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
