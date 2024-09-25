@@ -29,4 +29,9 @@ let newScore = 201;
 console.log(newScore);
 
 console.log(score, newScore);
-console.table([score, newScore]);
+
+let firstName = "Ajay";
+let isLoggedIn = true;
+let age = 20;
+
+console.table([firstName, isLoggedIn, age]);
