@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Forms</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <label for="first-name">First Name: </label>
+      <input
+        type="text"
+        name="first-name"
+        placeholder="Enter First Name"
+        id="first-name"
+      />
+      <br />
+      <label for="middle-name">Middle Name: </label>
+      <input
+        type="text"
+        name="middle-name"
+        placeholder="Enter Middle Name"
+        id="middle-name"
+      />
+      <br />
+      <label for="last-name">Last Name: </label>
+      <input
+        type="text"
+        name="last-name"
+        placeholder="Enter Last Name"
+        id="last-name"
+      />
+      <br />
+      <h3>Select Your Gender</h3>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="others" />
+      <label for="others">Others</label>
+      <br />
+      <br />
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter Your Email"
+        id="email"
+        required
+      />
+      <br />
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter Your Password"
+      />
+      <br />
+      <label for="code-editor">Select your favorite code editor: </label>
+      <select name="code-editor" id="code-editor">
+        <option value="sublime">Sublime Text</option>
+        <option value="vscode">VsCode</option>
+        <option value="atom">Atom</option>
+        <option value="other">Other</option>
+      </select>
+      <br />
+      <h3>Select the languages you want to learn:</h3>
+      <input type="checkbox" name="hindi" id="hindi" />
+      <label for="hindi">Hindi</label>
+      <input type="checkbox" name="english" id="english" />
+      <label for="english">English</label>
+      <input type="checkbox" name="marathi" id="marathi" />
+      <label for="marathi">Marathi</label>
+      <input type="checkbox" name="gujarati" id="gujarati" />
+      <label for="gujarati">Gujarati</label>
+      <br />
+      <br />
+      <label for="message">Message: </label>
+      <br />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Enter Your Message"
+      ></textarea>
+      <br />
+      <label for="photo">Upload Photo: </label>
+      <input type="file" name="photo" id="photo" />
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
