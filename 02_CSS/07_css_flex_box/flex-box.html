@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Demo</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #023047;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      section {
+        width: 100%;
+        background-color: #219ebc;
+        margin-bottom: 35px;
+        border: 5px solid white;
+        display: flex;
+        min-height: 35vh;
+        /* flex-wrap: wrap; */
+      }
+
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: #8ecae6;
+        border: 5px solid rgb(248, 248, 248);
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+      }
+
+      #box-1 {
+        background-color: #ff6392;
+      }
+
+      #box-2 {
+        background-color: #ffe45e;
+        color: black;
+      }
+
+      #box-3 {
+        background-color: #a5be00;
+      }
+
+      #box-4 {
+        background-color: #ffb703;
+      }
+
+      #box-5 {
+        background-color: #fb8500;
+      }
+
+      #box-6 {
+        background-color: #023047;
+      }
+
+      #box-7 {
+        background-color: #e3d5ca;
+        color: black;
+      }
+
+      #box-8 {
+        background-color: #00a6fb;
+      }
+
+      #box-9 {
+        background-color: #ad2831;
+      }
+
+      #box-10 {
+        background-color: #ee6c4d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Demo</h1>
+    <h2>1. Default Flex (row)</h2>
+    <section style="flex-direction: row">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+      <div class="box" id="box-5">5</div>
+      <div class="box" id="box-6">6</div>
+      <div class="box" id="box-7">7</div>
+      <div class="box" id="box-8">8</div>
+      <div class="box" id="box-9">9</div>
+      <div class="box" id="box-10">10</div>
+    </section>
+
+    <h2>2. Flex Direction: Column</h2>
+    <section style="flex-direction: column">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+      <div class="box" id="box-5">5</div>
+      <div class="box" id="box-6">6</div>
+      <div class="box" id="box-7">7</div>
+      <div class="box" id="box-8">8</div>
+      <div class="box" id="box-9">9</div>
+      <div class="box" id="box-10">10</div>
+    </section>
+
+    <h2>3. Justify Content: Space-Between</h2>
+    <section style="justify-content: space-between">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+      <div class="box" id="box-5">5</div>
+      <div class="box" id="box-6">6</div>
+      <div class="box" id="box-7">7</div>
+      <div class="box" id="box-8">8</div>
+      <div class="box" id="box-9">9</div>
+      <div class="box" id="box-10">10</div>
+    </section>
+
+    <h2>4. Align Items: Center</h2>
+    <section style="align-items: center">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+      <div class="box" id="box-5">5</div>
+      <div class="box" id="box-6">6</div>
+      <div class="box" id="box-7">7</div>
+      <div class="box" id="box-8">8</div>
+      <div class="box" id="box-9">9</div>
+      <div class="box" id="box-10">10</div>
+    </section>
+
+    <h2>5. Flex Wrap: Wrap</h2>
+    <section style="flex-wrap: wrap">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+      <div class="box" id="box-5">5</div>
+      <div class="box" id="box-6">6</div>
+      <div class="box" id="box-7">7</div>
+      <div class="box" id="box-8">8</div>
+      <div class="box" id="box-9">9</div>
+      <div class="box" id="box-10">10</div>
+    </section>
+
+    <h2>6. Align Content: Space-Around (with Wrap)</h2>
+    <section style="flex-wrap: wrap; align-content: space-around">
+      <div class="box" id="box-1">1</div>
+      <div class="box" id="box-2">2</div>
+      <div class="box" id="box-3">3</div>
+      <div class="box" id="box-4">4</div>
+      <div class="box" id="box-5">5</div>
+      <div class="box" id="box-6">6</div>
+      <div class="box" id="box-7">7</div>
+      <div class="box" id="box-8">8</div>
+      <div class="box" id="box-9">9</div>
+      <div class="box" id="box-10">10</div>
+    </section>
+
+    <h2>7. Order Property</h2>
+    <section>
+      <div class="box" id="box-1" style="order: 10">1</div>
+      <div class="box" id="box-2" style="order: 9">2</div>
+      <div class="box" id="box-3" style="order: 8">3</div>
+      <div class="box" id="box-4" style="order: 7">4</div>
+      <div class="box" id="box-5" style="order: 6">5</div>
+      <div class="box" id="box-6" style="order: 5">6</div>
+      <div class="box" id="box-7" style="order: 4">7</div>
+      <div class="box" id="box-8" style="order: 3">8</div>
+      <div class="box" id="box-9" style="order: 2">9</div>
+      <div class="box" id="box-10" style="order: 1">10</div>
+    </section>
+
+    <h2>8. Flex Grow</h2>
+    <section>
+      <div class="box" id="box-1" style="flex-grow: 1">1</div>
+      <div class="box" id="box-2" style="flex-grow: 1">2</div>
+      <div class="box" id="box-3" style="flex-grow: 20">3</div>
+      <div class="box" id="box-4" style="flex-grow: 1">4</div>
+      <div class="box" id="box-5" style="flex-grow: 5">5</div>
+      <div class="box" id="box-6" style="flex-grow: 1">6</div>
+      <div class="box" id="box-7" style="flex-grow: 10">7</div>
+      <div class="box" id="box-8" style="flex-grow: 1">8</div>
+      <div class="box" id="box-9" style="flex-grow: 2">9</div>
+      <div class="box" id="box-10" style="flex-grow: 1">10</div>
+    </section>
+
+    <h2>9. Align Self</h2>
+    <section>
+      <div class="box" id="box-1" style="align-self: flex-start">1</div>
+      <div class="box" id="box-2" style="align-self: flex-end">2</div>
+      <div class="box" id="box-3" style="align-self: start">3</div>
+      <div class="box" id="box-4" style="align-self: flex-start">4</div>
+      <div class="box" id="box-5" style="align-self: end">5</div>
+      <div class="box" id="box-6" style="align-self: flex-start">6</div>
+      <div class="box" id="box-7" style="align-self: stretch; height: auto">
+        7
+      </div>
+      <div class="box" id="box-8" style="align-self: center">8</div>
+      <div class="box" id="box-9" style="align-self: baseline">9</div>
+      <div class="box" id="box-10" style="align-self: flex-start">10</div>
+    </section>
+  </body>
+</html>
