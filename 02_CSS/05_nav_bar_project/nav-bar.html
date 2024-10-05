@@ -12,9 +12,11 @@
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        background-color: #264653;
+      }
       main {
         font-family: "Poppins", sans-serif;
-        background-color: #264653;
         width: 100vw;
         min-height: 100vh;
       }
@@ -134,6 +136,70 @@
         background-color: black;
         color: #e9c46a;
       }
+
+      #navbar-3 {
+        background-color: #e76f51;
+        padding: 15px 5px;
+      }
+
+      #navbar-3 ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 30px;
+      }
+
+      #navbar-3 li a {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      #navbar-3 button {
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 8px 20px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        border-radius: 7px;
+        font-weight: bolder;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #navbar-3 button:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        color: #2a9d8f;
+      }
+
+      #drop-down {
+        position: relative;
+      }
+      #drop-down:hover #drop-down-container {
+        display: block !important;
+      }
+
+      #drop-down-container {
+        position: absolute;
+        display: none !important;
+        background-color: #df6445;
+        width: 100%;
+        min-height: 120px;
+        box-shadow: 1px -1px 4px black;
+        padding: 10px 5px;
+      }
+
+      #drop-down-container li:hover {
+        background-color: #ff3300;
+        width: 100%;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -163,6 +229,23 @@
       </header>
 
       <h2>Variation 3: Horizontal with dropdown</h2>
+      <header>
+        <nav id="navbar-3">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li id="drop-down">
+              <a href="#">About Us</a>
+              <ul id="drop-down-container">
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Values</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button>Sign Up</button></li>
+          </ul>
+        </nav>
+      </header>
     </main>
   </body>
 </html>
