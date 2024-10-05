@@ -78,12 +78,68 @@
         background-color: white;
         color: #2a9d8f;
       }
+
+      #navbar-2 {
+        background-color: #e9c46a;
+        padding: 10px;
+        max-width: 500px;
+        margin: 0px auto;
+      }
+
+      #navbar-2 ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 30px;
+      }
+
+      #navbar-2 li {
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+        width: 100%;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      #navbar-2 li:hover {
+        background-color: #f9b812d1;
+      }
+
+      #navbar-2 li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+
+      #navbar-2 button {
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 8px 20px;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 7px;
+        font-weight: bolder;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+      }
+
+      #navbar-2 button:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: black;
+        color: #e9c46a;
+      }
     </style>
   </head>
   <body>
     <main>
       <h2>Variation 1: Horizontal with underline effect</h2>
-      <header id="header-1">
+      <header>
         <nav id="navbar-1">
           <ul>
             <li><a href="#">Home</a></li>
@@ -93,7 +149,19 @@
           </ul>
         </nav>
       </header>
+
       <h2>Variation 2: Vertical with hover effect</h2>
+      <header>
+        <nav id="navbar-2">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <button>Sign Up</button>
+          </ul>
+        </nav>
+      </header>
+
       <h2>Variation 3: Horizontal with dropdown</h2>
     </main>
   </body>
