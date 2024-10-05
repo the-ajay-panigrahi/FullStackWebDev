@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        font-family: "Poppins", sans-serif;
+        background-color: #264653;
+        width: 100vw;
+        min-height: 100vh;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #navbar-1 {
+        background-color: #2a9d8f;
+        padding: 15px 5px;
+      }
+
+      #navbar-1 ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 30px;
+      }
+
+      #navbar-1 li a {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      #navbar-1 li a::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        background-color: white;
+      }
+
+      #navbar-1 li a:hover::after {
+        transform: scaleX(1);
+      }
+
+      #navbar-1 button {
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 8px 20px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 20px;
+        border-radius: 7px;
+        font-weight: bolder;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #navbar-1 button:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+        color: #2a9d8f;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Variation 1: Horizontal with underline effect</h2>
+      <header id="header-1">
+        <nav id="navbar-1">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><button>Sign Up</button></li>
+          </ul>
+        </nav>
+      </header>
+      <h2>Variation 2: Vertical with hover effect</h2>
+      <h2>Variation 3: Horizontal with dropdown</h2>
+    </main>
+  </body>
+</html>
