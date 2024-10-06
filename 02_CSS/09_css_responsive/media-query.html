@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media Query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      div {
+        width: 80%;
+      }
+
+      @media (max-width: 400px) {
+        body {
+          background-color: steelblue;
+        }
+
+        div {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+
+      @media (min-width: 401px) and (max-width: 640px) {
+        body {
+          background-color: orangered;
+        }
+
+        div {
+          font-size: 19px;
+          font-weight: 700;
+        }
+      }
+
+      @media (min-width: 641px) and (max-width: 1024px) {
+        body {
+          background-color: cyan;
+        }
+
+        div {
+          font-size: 22px;
+          font-weight: 900;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        div {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      This div changes background color based on the width of the screen
+    </div>
+  </body>
+</html>
