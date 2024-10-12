@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Component</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar bg-base-100 flex-wrap">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Code&Code</a>
+      </div>
+      <div class="flex-none gap-2">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Search"
+            class="input input-bordered w-24 md:w-auto"
+          />
+        </div>
+        <div class="dropdown dropdown-end">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="relative w-10 h-10 rounded-full overflow-hidden">
+              <img
+                alt="User Avatar"
+                src="../assets/dp.jpg"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Settings</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div
+      class="hero min-h-[89vh]"
+      style="background-image: url(../assets/bg.jpg)"
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Ajay Panigrahi</h1>
+          <p class="mb-5">
+            As a frontend developer, I focus on crafting engaging and intuitive
+            user interfaces that enhance the overall user experience. <br />
+            <br />I believe that effective design should not only be visually
+            appealing but also functional, making it easier for users to
+            interact with products and services.
+          </p>
+          <button class="btn btn-primary">Hire Me</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="footer bg-base-200 text-base-content p-10 flex flex-col md:flex-row justify-between"
+    >
+      <nav class="mb-6 md:mb-0">
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav class="mb-6 md:mb-0">
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav class="mb-6 md:mb-0">
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form class="w-full md:w-1/4">
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="form-control">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item w-full"
+            />
+            <button class="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+  </body>
+</html>
