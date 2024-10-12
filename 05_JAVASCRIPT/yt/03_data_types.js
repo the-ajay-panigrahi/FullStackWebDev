@@ -22,6 +22,25 @@ console.log(2
 Dont do the above circus, code readability should be high.
 */
 
+/*
+   JavaScript is a dynamically typed language or loosely typed language.
+   It means we do not need to explicitly declare the type of a variable before using it.
+   It means the data type of a variable can be changed later on. 
+
+   For example:
+            let x = 10;
+                x = "Ajay";
+                x = true;
+                x = null;
+
+*/
+
+/*
+  Based on how data is stored and accessed from the memory, data types can be divided into two categories:
+      - Primitive Data Types (Call by Value OR Pass by Value) - copy
+      - Non-Primitive / Reference Data Types (Call by Reference OR Pass by Reference) - reference/ address
+*/
+
 /*  Primitive Data Types:
     1) String : "Hello World"
     2) Number : 10, 2.5, -4
