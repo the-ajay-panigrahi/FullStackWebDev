@@ -14,11 +14,37 @@
 
  It looks like it is a object-oriented programming language because of classes and constructors, but that's just a disguise. Underneath, it's still prototype-based.
 
- Here's a corrected version of the statement:
-
- Whenever you create an object or function in JavaScript, a prototype is always present. However, primitive values (like numbers and strings) do not have prototypes in the same way.
+  Whenever you create an object or function in JavaScript, a prototype is always present. However, primitive values (like numbers and strings) do not have prototypes in the same way.
 
  What is a prototype?
   => A prototype is an object associated with every function and object in JavaScript that enables inheritance, allowing objects to inherit properties and methods from one another. It provides additional properties and functionalities for a given data type.
   
  */
+
+//   dunder => __
+
+let lenovo = {
+  screen: "HD",
+  cpu: 12,
+  ram: 16,
+};
+
+let dell = {
+  screen: "4K",
+  cpu: 18,
+  __proto__: lenovo, // a bit older way
+};
+
+let asus = {
+  screen: "8K",
+  size: "42 inch",
+};
+
+console.log("lenovo", lenovo.__proto__);
+console.log("dell", dell.__proto__);
+console.log(dell.ram);
+
+Object.setPrototypeOf(asus, lenovo); // a bit modern way
+// console.log("asus", asus.__proto__);
+console.log("asus", Object.getPrototypeOf(asus));
+console.log(asus.ram);
