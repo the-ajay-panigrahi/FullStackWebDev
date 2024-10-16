@@ -12,6 +12,10 @@
 
  Polymorphism - Polymorphism is the ability of an object to take on multiple forms.
 
+ Static Methods - Static methods are methods that are not tied to any specific object. They can be called directly on the class without creating an instance. Static methods can only be called by the class itself, not by objects. 
+
+ Static Properties - Just like static methods, static properties are associated with the class itself, not with instances (objects) of the class. They can be accessed directly from the class, not from an instance.
+
  */
 
 /* 
@@ -154,3 +158,17 @@ let penguin = new Penguin();
 */
 // sparrow.fly();
 // penguin.fly();
+
+// Static Properties and Methods
+class Calculator {
+  static myStaticProperty = "I am static property!!";
+  static add(num1, num2) {
+    console.log(num1 + num2);
+  }
+}
+let sampleCalculation = new Calculator();
+// console.log(sampleCalculation.myStaticProperty);
+// sampleCalculation.add(2, 3);
+
+console.log(Calculator.myStaticProperty);
+Calculator.add(4, 5);
