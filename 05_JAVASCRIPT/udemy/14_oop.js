@@ -16,6 +16,14 @@
 
  Static Properties - Just like static methods, static properties are associated with the class itself, not with instances (objects) of the class. They can be accessed directly from the class, not from an instance.
 
+ Getters & Setters - Getters and Setters in JavaScript are special methods that allow you to define how the properties of an object are accessed and modified. They provide a way to control the behavior when reading or writing to an object's properties.
+  
+    Getters:
+    A getter is a method that gets the value of a property. It is defined using the get keyword.
+
+    Setters:
+    A setter is a method that sets the value of a property. It is defined using the set keyword
+
  */
 
 /* 
@@ -170,5 +178,32 @@ let sampleCalculation = new Calculator();
 // console.log(sampleCalculation.myStaticProperty);
 // sampleCalculation.add(2, 3);
 
-console.log(Calculator.myStaticProperty);
-Calculator.add(4, 5);
+// console.log(Calculator.myStaticProperty);
+// Calculator.add(4, 5);
+
+// Getters and Setters
+class Employee {
+  #salary;
+  constructor(firstName, age, salary) {
+    if (salary < 0) {
+      throw new Error("Salary cannot be negative!");
+    }
+    this.firstName = firstName;
+    this.age = age;
+    this.#salary = salary;
+  }
+  get salary() {
+    // return this.#salary;
+    throw new Error("You cannot access the salary!!");
+  }
+  set salary(value) {
+    if (value < 0) {
+      throw new Error("Invalid Salary");
+    }
+    this.#salary = value;
+  }
+}
+
+let emp = new Employee("Ajay", 20, 85000);
+// console.log(emp);
+// console.log(emp.salary); // error
