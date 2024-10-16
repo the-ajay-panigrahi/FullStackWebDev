@@ -10,6 +10,8 @@
  
  Abstraction - Abstraction is the process of hiding complex implementation details and showing only the relevant features to the user. It focuses on "what" an object does, rather than "how" it does it.
 
+ Polymorphism - Polymorphism is the ability of an object to take on multiple forms.
+
  */
 
 /* 
@@ -130,4 +132,25 @@ class TeaMaker {
 }
 
 let masalaChai = new TeaMaker();
-masalaChai.makeTea();
+// masalaChai.makeTea();
+
+// Polymorphism
+class Bird {
+  fly() {
+    console.log("I can fly.......");
+  }
+}
+
+class Penguin extends Bird {
+  fly() {
+    console.log("I can't fly because I swim........");
+  }
+}
+
+let sparrow = new Bird();
+let penguin = new Penguin();
+/*
+    This is exactly what polymorphism is, the method name is the same, but its behavior differs.
+*/
+// sparrow.fly();
+// penguin.fly();
