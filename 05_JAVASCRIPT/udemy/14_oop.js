@@ -8,6 +8,8 @@
 
  Encapsulation - Encapsulation is the process of hiding internal details and exposing only the necessary functionality. It restricts direct access to an object's data to protect it from outside interference.
  
+ Abstraction - Abstraction is the process of hiding complex implementation details and showing only the relevant features to the user. It focuses on "what" an object does, rather than "how" it does it.
+
  */
 
 /* 
@@ -89,3 +91,43 @@ let account = new BankAccount();
 // console.log(account.getBalance());
 // account.deposit(12345);
 // console.log(account.getBalance());
+
+// Abstraction
+class TeaMaker {
+  start() {
+    // complex DB calls
+    // complex logic
+    console.log("Starting the tea maker....");
+  }
+
+  ingredients() {
+    // complex logic
+    console.log("Calculating ingredients...");
+  }
+
+  teaProportion() {
+    // complex logic
+    console.log("Calculating tea proportion...");
+  }
+
+  brew() {
+    // complex logic
+    console.log("Brewing the tea...");
+  }
+
+  finish() {
+    // complex logic
+    console.log("Finishing the tea...");
+  }
+
+  makeTea() {
+    this.start();
+    this.ingredients();
+    this.teaProportion();
+    this.brew();
+    this.finish();
+  }
+}
+
+let masalaChai = new TeaMaker();
+masalaChai.makeTea();
