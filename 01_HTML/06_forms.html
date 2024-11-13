@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name: </label>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <br />
+      <label for="email">Email: </label>
+      <input type="email" id="email" placeholder="Enter your email" />
+      <br />
+      <label for="password">Password: </label>
+      <input type="password" id="password" placeholder="Enter your password" />
+      <br />
+      <br />
+      <div>
+        Sample Check Boxes
+        <br />
+        <input type="checkbox" id="b1" />
+        <label for="b1">Sample One</label>
+        <br />
+        <input type="checkbox" id="b2" />
+        <label for="b2">Sample Two</label>
+        <br />
+        <input type="checkbox" id="b3" />
+        <label for="b3">Sample Three</label>
+        <br />
+      </div>
+
+      <br />
+
+      <div>
+        Select Your Gender
+        <br />
+        <input type="radio" name="Gender" id="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" name="Gender" id="female" />
+        <label for="female">FeMale</label>
+        <br />
+        <input type="radio" name="Gender" id="others" />
+        <label for="others">Others</label>
+        <br />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="fav-ide">Select Your Favourite IDE: </label>
+        <select id="fav-ide">
+          <option value="vscode">VsCode</option>
+          <option value="sublime-text">Sublime Text</option>
+          <option value="vim">Vim</option>
+          <option value="cursor">Cursor</option>
+          <option value="atom">Atom</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
