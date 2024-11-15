@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Component Project</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        max-height: 100vh;
+      }
+
+      .heading {
+        background-color: #ffffff;
+        color: #000000;
+        width: 670px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px auto;
+      }
+
+      /* navigation bar - 1 */
+      #nav1 {
+        background-color: #bc4749;
+        padding: 10px;
+      }
+
+      #nav1 ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+      }
+
+      #nav1 li {
+        position: relative;
+      }
+
+      #nav1 div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        cursor: pointer;
+      }
+
+      #nav1 button {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #a7c957;
+        border: none;
+        padding: 12px 15px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #nav1 button:hover {
+        background-color: #5b8300;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #nav1 li::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+      }
+
+      #nav1 li:hover:after {
+        transform: scaleX(1);
+      }
+      /* navigation bar - 2 */
+      #nav2 {
+        background-color: #354f52;
+        width: 300px;
+        margin: 0px auto;
+      }
+
+      #nav2 ul {
+        list-style: none;
+        padding: 10px;
+        font-family: cursive;
+      }
+
+      #nav2 li {
+        padding: 10px;
+        transition: all 0.3s ease;
+      }
+
+      #nav2 li:hover {
+        background-color: #2f3e46;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      #nav2 button {
+        width: 100%;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      #nav2 button:hover {
+        background-color: #000000;
+        transition: all 0.3s ease;
+        color: #ffffff;
+      }
+
+      /* navigation bar - 3 */
+      #nav3 {
+        background-color: #f6bd60;
+        color: #000000;
+      }
+
+      #nav3 ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      #nav3 li {
+        cursor: pointer;
+      }
+
+      .dropdown-content li {
+        margin: 5px;
+        padding: 5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .dropdown-content li:hover {
+        background-color: #cacaca;
+        transition: all 0.3s ease;
+      }
+      .dropdown:hover .dropdown-content {
+        transition: all 0.3s ease;
+        display: block;
+      }
+
+      #nav3 button {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #ffffff;
+        border: none;
+        padding: 12px 15px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+      }
+
+      #nav3 button:hover {
+        background-color: #000000;
+        color: #ffffff;
+        transition: all 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="heading">Variation 1: Horizontal with underline effect</h2>
+    <section id="nav1">
+      <nav>
+        <ul>
+          <div>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+          </div>
+          <button>Sign Up</button>
+        </ul>
+      </nav>
+    </section>
+
+    <h2 class="heading">Variation 2: Vertical with hover effect</h2>
+    <section id="nav2">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+          <button>Sign Up</button>
+        </ul>
+      </nav>
+    </section>
+
+    <h2 class="heading">Variation 3: Horizontal with dropdown</h2>
+    <section id="nav3">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <div class="dropdown">
+            <li>About</li>
+            <div class="dropdown-content">
+              <li>Team</li>
+              <li>History</li>
+              <li>Goals</li>
+            </div>
+          </div>
+          <li>Contact Us</li>
+          <button>Sign Up</button>
+        </ul>
+      </nav>
+    </section>
+  </body>
+</html>
