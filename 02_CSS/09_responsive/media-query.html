@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        font-family: cursive;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      /* 
+      Media Query Syntax
+
+       @media (max-width: 600px) {
+
+      }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+        
+      }
+
+      */
+
+      @media (max-width: 600px) {
+        body {
+          background-color: #000000;
+          color: #ffffff;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 800px) {
+        body {
+          background-color: #00a2ff;
+          color: #ffffff;
+        }
+        p {
+          font-size: 25px;
+        }
+      }
+
+      @media (min-width: 801px) and (max-width: 1024px) {
+        body {
+          background-color: #ff00d9;
+          color: #ffffff;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        body {
+          background-color: #fffb00;
+          color: #000000;
+        }
+        p {
+          font-size: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph</p>
+  </body>
+</html>
