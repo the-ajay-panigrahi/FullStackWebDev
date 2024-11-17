@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Basics</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+      }
+
+      .items {
+        background-color: steelblue;
+        border: 5px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-family: cursive;
+        font-size: 30px;
+        border-radius: 5px;
+      }
+
+      section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1fr;
+        width: 50vw;
+        height: 75vh;
+        gap: 5px;
+      }
+
+      .item-1 {
+        /* grid-row-start: 1;
+        grid-row-end: 2; */
+        grid-row: 1/2;
+
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-column: 1/3;
+      }
+
+      .item-2 {
+        grid-row: 1/3;
+        grid-column: 3/4;
+      }
+
+      .item-3 {
+        grid-row: 3/4;
+        grid-column: 2/4;
+      }
+
+      .item-4 {
+        grid-row: 2/4;
+        grid-column: 1/2;
+      }
+
+      .item-5 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="items item-1">1</div>
+      <div class="items item-2">2</div>
+      <div class="items item-3">3</div>
+      <div class="items item-4">4</div>
+      <div class="items item-5">5</div>
+    </section>
+  </body>
+</html>
