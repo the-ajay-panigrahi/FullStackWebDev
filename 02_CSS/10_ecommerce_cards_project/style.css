@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+img {
+  width: 200px;
+}
+
+h2 {
+  border-top: 2px solid #000000;
+  padding-top: 8px;
+  padding-bottom: 3px;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #292929;
+}
+
+.purchase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-inline: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: orangered;
+  color: #ffffff;
+  font-weight: medium;
+  padding: 5px 10px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+.atc {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+
+.atc:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
