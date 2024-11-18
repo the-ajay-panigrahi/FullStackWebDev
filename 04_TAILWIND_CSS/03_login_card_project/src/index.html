@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="flex justify-center items-center h-screen bg-slate-900">
+    <section
+      class="bg-slate-700 p-5 rounded-lg flex flex-col justify-center items-center gap-4 w-full max-w-lg m-5"
+    >
+      <h2 class="text-2xl text-white font-bold">Login</h2>
+      <form class="flex flex-col gap-2 w-full">
+        <label for="email" class="text-gray-300 text-md">Email: </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          class="text-gray-900 placeholder:text-slate-400 py-1 px-2 rounded-md w-full mt-[-5px]"
+        />
+        <label for="password" class="text-gray-300 text-md">Password: </label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          class="text-gray-900 placeholder:text-slate-400 py-1 px-2 rounded-md w-full mt-[-5px]"
+        />
+        <button
+          type="submit"
+          class="bg-orange-600 text-white py-1 px-2 rounded-md mt-3 hover:bg-orange-700 transition-all duration-300 ease-in-out"
+        >
+          Login
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
