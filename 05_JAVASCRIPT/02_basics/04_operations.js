@@ -1,0 +1,53 @@
+// Arithmetic operations
+// console.log(2 + 2); // 4
+// console.log(2 - 2); // 0
+// console.log(2 * 2); // 4
+// console.log(2 / 2); // 1
+// console.log(2 ** 2); // 4
+// console.log(2 % 2); // 0
+
+let a = 2;
+// console.log(a++); // 2
+// console.log(++a); // 4
+// console.log(a--); // 4
+// console.log(--a); // 2
+
+// Comparison operations
+// console.log(2 == "2"); // true
+// console.log(2 === "2"); // false
+// console.log(2 != 2); // false
+// console.log(2 !== "2"); // true
+// console.log(2 > 2); // false
+// console.log(2 < 2); // false
+// console.log(2 >= 2); // true
+// console.log(2 <= 2); // true
+
+// Logical operations
+// console.log(true && true); // true
+// console.log(true && false); // false
+// console.log(false && true); // false
+// console.log(false && false); // false
+// console.log(true || true); // true
+// console.log(true || false); // true
+// console.log(false || true); // true
+// console.log(false || false); // false
+// console.log(!true); // false
+// console.log(!false); // true
+
+// Assignment operations
+let x = 2;
+console.log(x); // 2
+x += 2;
+console.log(x); // 4
+x -= 2;
+console.log(x); // 2
+x *= 2;
+console.log(x); // 4
+x /= 2;
+console.log(x); // 2
+x **= 2;
+console.log(x); // 4
+x %= 2;
+console.log(x); // 0
+
+
