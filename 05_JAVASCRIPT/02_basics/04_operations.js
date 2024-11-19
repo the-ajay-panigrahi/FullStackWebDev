@@ -50,4 +50,17 @@ console.log(x); // 4
 x %= 2;
 console.log(x); // 0
 
+// let calculate = 2 * 3 + 5 % 6 / 2 + 8; // bad practice
 
+let calculate = (2 * ((3 + 5) % 6)) / (2 + 8); // good practice
+console.log(calculate);
+
+/*
+   Instead of writing messy code like this :-
+   let calculate = 2 * 3 + 5 % 6 / 2 + 8;
+   you would require operator precedence table to understand the order of operations.
+
+   We can write it like this :-
+   let calculate = (2 * ((3 + 5) % 6)) / (2 + 8);
+   use parentheses to make the code more readable and easy to understand and avoid the need of operators precedence table.
+*/
