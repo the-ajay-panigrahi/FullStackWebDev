@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Tables</title>
+    <style>
+      body {
+        background-color: steelblue;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      caption {
+        text-decoration: underline wavy;
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      table {
+        border: 2px solid white;
+        padding: 10px;
+        margin: 10px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+        border: 1px solid white;
+      }
+
+      thead {
+        font-style: italic;
+        background-color: red;
+      }
+
+      tbody {
+        font-family: cursive;
+        background-color: orange;
+      }
+
+      tfoot {
+        font-size: 10px;
+        background-color: greenyellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Employee's
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Designation</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ajay</td>
+          <td>20</td>
+          <td>Full Stack Web Developer</td>
+          <td rowspan="3">Male</td>
+        </tr>
+        <tr>
+          <td>Dhananjay</td>
+          <td>35</td>
+          <td>Dev Ops</td>
+        </tr>
+        <tr>
+          <td>Madhav</td>
+          <td>51</td>
+          <td>Team Lead</td>
+        </tr>
+        <tr>
+          <td>Radhika</td>
+          <td>18</td>
+          <td>Student</td>
+          <td>Female</td>
+        </tr>
+        <tr>
+          <td>Ram</td>
+          <td>25</td>
+          <td>Manager</td>
+          <td>Male</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
