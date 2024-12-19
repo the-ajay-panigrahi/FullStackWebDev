@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Forms</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: grey;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(248, 183, 109);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 10px;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="get">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your first name"
+        />
+      </div>
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" placeholder="Enter your age" />
+      </div>
+      <div>
+        <label for="dob">Date of birth: </label>
+        <input
+          type="date"
+          name="dob"
+          id="dob"
+          placeholder="Enter your date of birth"
+        />
+      </div>
+      <div>
+        <p>
+          Gender :
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="others" />
+          <label for="others">Others</label>
+        </p>
+      </div>
+      <div>
+        <label for="branch"
+          >Select your branch:
+          <select name="branch" id="branch">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="civ">CIVIL</option>
+            <option value="mec">MEC</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <textarea name="Message" id="msg" placeholder="Enter your message here">
+        </textarea>
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
