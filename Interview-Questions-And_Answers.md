@@ -35,3 +35,5 @@ The **`preload`** attribute specifies how the audio file should be loaded when t
 - **`none`**: No preloading, the audio loads only when the user starts playback.
 - **`metadata`**: Only the metadata (duration, info) is preloaded.
 - **`auto`**: The entire audio file is preloaded in the background for faster playback.
+
+<!-- semanitic html, inline vs block elements -->
