@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ways to add CSS</title>
+    <!-- Internal CSS -->
+    <style>
+      #internal {
+        background-color: orange;
+        text-align: end;
+        padding: 10px;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 10px;
+        border: 4px solid red;
+        cursor: grabbing;
+      }
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Three Ways To Add CSS in HTML</h1>
+    <main>
+      <ol>
+        <li>Inline CSS</li>
+        <!-- Inline CSS -->
+        <p
+          style="
+            background-color: steelblue;
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+            font-weight: bold;
+            font-style: italic;
+          "
+        >
+          This para is styled using inline css!
+        </p>
+        <li>Internal CSS</li>
+        <p id="internal">This para is styled using internal css!</p>
+        <li>External CSS</li>
+        <p id="external">This para is styled using external css!</p>
+      </ol>
+    </main>
+  </body>
+</html>

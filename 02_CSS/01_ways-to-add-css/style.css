@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  padding: 100px;
+}
+
+#external {
+  background-color: maroon;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 25px;
+  cursor: not-allowed;
+}
