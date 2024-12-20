@@ -1,0 +1,24 @@
+div {
+  background-color: red;
+  color: yellow;
+  font-family: sans-serif;
+  margin: 5px;
+  padding: 3px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+span {
+  background-color: yellow;
+  font-family: cursive;
+  border: 5px solid saddlebrown;
+  margin-block: 10px;
+  display: inline-block;
+  padding: 5px;
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: crosshair;
+}
