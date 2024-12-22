@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+#pixel {
+  background-color: red;
+  border: 5px solid black;
+  /* width: 1536px; */
+}
+
+#viewport {
+  background-color: rgb(10, 255, 51);
+  border: 5px solid black;
+  width: 100vw;
+}
+
+#em {
+  background-color: rgb(0, 98, 255);
+  border: 5px solid black;
+  width: 100vw;
+  font-size: 20px;
+}
+
+#em p {
+  font-size: 2em;
+}
+
+#rem {
+  background-color: rgb(157, 17, 155);
+  border: 5px solid black;
+  width: 100vw;
+}
+
+#rem p {
+  font-size: 5rem;
+}
+
+#percentage {
+  background-color: rgb(231, 193, 7);
+  border: 5px solid black;
+  width: 100vw;
+}
+
+#percentage p {
+  background-color: red;
+  width: 50%;
+}
+
+#vmin-max {
+  background-color: rgb(231, 193, 7);
+  border: 5px solid black;
+  width: 100vw;
+  height: 100vh;
+  height: 100vmin;
+}
