@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Variables</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        color: #000000;
+      }
+
+      :root {
+        --headerColor: #fff700;
+        --mainColor: #d0d413;
+        --footerColor: #9cbb2dce;
+        --headerHeight: 20vh;
+        --mainHeight: 70vh;
+        --footerHeight: 10vh;
+        --footerFontSize: 10px;
+      }
+
+      header {
+        background-color: var(--headerColor);
+        height: var(--headerHeight);
+      }
+
+      main {
+        background-color: var(--mainColor);
+        height: var(--mainHeight);
+      }
+
+      footer {
+        --footerColor: #492dbbce;
+        background-color: var(--footerColor);
+        height: var(--footerHeight);
+        font-size: var(--footerFontSize);
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      li {
+        list-style: none;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex">
+      <nav class="flex">
+        <ul class="flex">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, debitis
+        accusantium ducimus voluptate quidem fugit voluptas accusamus iusto ad
+        esse quis nisi nesciunt perspiciatis repellat eum eaque iste minima odio
+        recusandae exercitationem! Obcaecati minus laudantium assumenda
+        dignissimos animi ex? Laborum aliquid ad modi officiis iure.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, debitis
+        accusantium ducimus voluptate quidem fugit voluptas accusamus iusto ad
+        esse quis nisi nesciunt perspiciatis repellat eum eaque iste minima odio
+        recusandae exercitationem! Obcaecati minus laudantium assumenda
+        dignissimos animi ex? Laborum aliquid ad modi officiis iure.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, debitis
+        accusantium ducimus voluptate quidem fugit voluptas accusamus iusto ad
+        esse quis nisi nesciunt perspiciatis repellat eum eaque iste minima odio
+        recusandae exercitationem! Obcaecati minus laudantium assumenda
+        dignissimos animi ex? Laborum aliquid ad modi officiis iure.
+      </p>
+    </main>
+    <footer class="flex">
+      <p>Sankat Mochan Mahabali Hanuman Ki Jai!</p>
+    </footer>
+  </body>
+</html>
