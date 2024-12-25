@@ -88,3 +88,24 @@ li::first-letter {
   font-size: 22px;
   font-style: italic;
 }
+
+/* Some more css selectors/variation */
+#sample:before {
+  content: "Jai Shree Ganesh!";
+  display: block;
+  color: red;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#sample:after {
+  content: "Sankat Mochan Mahabali Hanuman Ki Jai!";
+  display: block;
+  color: red;
+  font-style: italic;
+}
+
+::selection {
+  background-color: yellow;
+  color: steelblue;
+}
