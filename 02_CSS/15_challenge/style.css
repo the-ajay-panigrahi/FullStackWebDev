@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --navBgColor: rgb(0, 106, 255);
+  --navLinkColor: rgb(183, 219, 225);
+}
+
+header {
+  background-color: var(--navBgColor);
+  color: var(--navLinkColor);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  font-weight: bold;
+}
+
+nav ul li {
+  text-decoration: underline;
+}
