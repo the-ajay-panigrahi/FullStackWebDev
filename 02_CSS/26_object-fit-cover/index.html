@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Object Fit, Cover and More</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      #container {
+        background-color: orange;
+        border: 5px solid black;
+        width: 50vw;
+        height: 50vh;
+        background-image: url("https://img.freepik.com/free-photo/nature-beauty-reflected-tranquil-water-scene-generative-ai_188544-12648.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-size: contain; */
+        background-size: cover;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: fill;
+        object-fit: contain;
+        object-fit: cover; */
+
+        object-fit: cover;
+        object-position: bottom right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <img
+        src="https://img.freepik.com/free-photo/nature-beauty-reflected-tranquil-water-scene-generative-ai_188544-12648.jpg"
+        alt=""
+      /> -->
+    </div>
+  </body>
+</html>
