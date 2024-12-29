@@ -1,0 +1,149 @@
+@media only screen and (max-width: 400px) {
+  main nav img {
+    width: 80px;
+  }
+
+  main nav {
+    max-width: 90vw;
+  }
+
+  main nav div :first-child {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+
+  main nav div :last-child {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+
+  #hero-content {
+    margin-top: 120px;
+    max-width: 90vw;
+  }
+
+  #hero-content h2 {
+    font-size: 23px;
+  }
+
+  #hero-content h3 {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+
+  #hero-content p {
+    margin-top: 22px;
+    font-size: 14px;
+  }
+
+  #attention {
+    flex-direction: column;
+  }
+
+  #attention input::placeholder {
+    font-size: 15px;
+  }
+
+  #attention input {
+    padding: 5px 15px;
+    font-size: 19px;
+  }
+
+  #attention button {
+    padding: 5px 15px;
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 675px) {
+  main nav img {
+    width: 100px;
+  }
+
+  main nav {
+    justify-content: space-between;
+    max-width: 90vw;
+  }
+
+  main nav div :first-child {
+    padding: 5px 18px;
+    font-size: 12px;
+  }
+
+  main nav div :last-child {
+    padding: 5px 18px;
+    font-size: 12px;
+  }
+
+  #hero-content {
+    margin-top: 150px;
+    max-width: 60vw;
+  }
+
+  #hero-content h2 {
+    font-size: 23px;
+  }
+
+  #hero-content h3 {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+
+  #hero-content p {
+    margin-top: 22px;
+    font-size: 14px;
+  }
+
+  #attention {
+    flex-direction: column;
+  }
+
+  #attention input::placeholder {
+    font-size: 15px;
+  }
+
+  #attention input {
+    padding: 5px 15px;
+    font-size: 19px;
+  }
+
+  #attention button {
+    padding: 5px 15px;
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 676px) and (max-width: 1200px) {
+  #hero-content {
+    margin-top: 160px;
+    max-width: 65vw;
+  }
+
+  #hero-content h2 {
+    font-size: 40px;
+  }
+
+  #hero-content h3 {
+    font-size: 18px;
+    margin-top: 13px;
+  }
+
+  #hero-content p {
+    margin-top: 25px;
+    font-size: 15px;
+  }
+
+  #attention input::placeholder {
+    font-size: 16px;
+  }
+
+  #attention input {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+
+  #attention button {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+}
