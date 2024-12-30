@@ -137,3 +137,62 @@ main nav div {
   transition: all 0.4s ease-in-out;
 }
 
+/* trending section */
+#trending {
+  max-width: 80vw;
+  margin: 20px auto;
+}
+
+#trending .headings h3 {
+  font-weight: bolder;
+  font-size: 25px;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#trending .headings button {
+  background-color: #0000001b;
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  padding: 7px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+#trending-card-container {
+  max-width: 80vw;
+  margin: 20px auto;
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#trending-card-container #item {
+  width: 195px;
+  height: 275px;
+  background-image: url("./assets/trending-img-1.webp");
+  border-radius: 5px;
+  position: relative;
+  object-fit: cover;
+  margin: 30px 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#trending-card-container #item:hover {
+  transform: scale(1.2);
+}
+
+#trending-card-container #item span {
+  position: absolute;
+  bottom: 10px;
+  font-size: 90px;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px white;
+  font-family: "Open Sans", serif;
+  left: -20px;
+}
