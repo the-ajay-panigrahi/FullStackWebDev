@@ -165,7 +165,7 @@ main nav div {
 #trending-card-container {
   max-width: 80vw;
   margin: 20px auto;
-  min-height: 60vh;
+  /* min-height: 60vh; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -195,4 +195,48 @@ main nav div {
   -webkit-text-stroke: 2px white;
   font-family: "Open Sans", serif;
   left: -20px;
+}
+
+/* join section */
+#reason-to-join h3 {
+  font-weight: bolder;
+  font-size: 21px;
+  letter-spacing: 1.3px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+#reason-to-join {
+  max-width: 80vw;
+  margin: 60px auto;
+}
+
+#reason-to-join .cards-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+#reason-to-join .cards-cont .card {
+  width: 315px;
+  height: 330px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 15px;
+  padding: 30px 15px;
+  position: relative;
+}
+
+#reason-to-join .cards-cont .card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#reason-to-join .cards-cont .card img {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
 }
