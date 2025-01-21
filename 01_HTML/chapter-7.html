@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Forms</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: steelblue;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form {
+        background-color: greenyellow;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="GET">
+      <label for="phoneNumber">Phone number: </label>
+      <input
+        type="number"
+        id="phoneNumber"
+        required
+        placeholder="Enter you phone number..."
+      />
+      <br />
+
+      <label for="comment"> Write your thoughts: </label>
+      <textarea id="comment" placeholder="Likho..."></textarea>
+      <br />
+      <label for="pass">Password: </label>
+      <input type="password" id="pass" pattern=".{8,}" />
+      <br />
+      <br />
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
